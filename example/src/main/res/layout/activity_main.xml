@@ -4,16 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/text_view"
-        android:text="Hello World!"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#B3000000"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="top|start"
+        android:text="Initializing..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pip_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pip_button_cd"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_view"
+        android:tint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

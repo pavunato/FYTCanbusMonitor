@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CanbusMonitor</string>
+    <string name="pip_button_cd">Show log in picture-in-picture</string>
 </resources>

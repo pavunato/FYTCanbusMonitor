@@ -50,10 +50,11 @@ class ModuleCallback(private val name: String, private val view: TextView?) : IM
             view = mainAct.findViewById(R.id.text_view)
             Log.i("TextView", "Count1: ${view?.lineCount}")
             //view?.movementMethod = ScrollingMovementMethod()
+            lines.clear()
             for (i in 1..100) {
                 lines.add("\n")
             }
-            view?.text = lines.toString()
+            view?.text = lines.joinToString("")
             val resolver = act.contentResolver
             val values = ContentValues()
             val fileName = "CanBox-" + Instant.now().toString()
